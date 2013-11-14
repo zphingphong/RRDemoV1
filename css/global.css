@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 0 0.5em;
+}
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/******************************** [START] Bootstrap Override ***********************************/
+.progress {
+    border-radius: 0;
+    height: 0.5em;
+}
+/******************************** [END] Bootstrap Override ***********************************/
+
+
+/******************************** [START] Generic styles ***********************************/
+.pad-bottom-small {
+    padding-bottom: 0.5em;
+}
+/******************************** [END] Generic styles ***********************************/
+
+
+#location-map {
+    height: 500px;
+}
+
+#location-selection-container a:hover {
+    text-decoration: none;
+}

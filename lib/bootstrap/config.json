@@ -1,11 +1,18 @@
 {
   "vars": {
+    "@navbar-margin-bottom": "0",
     "@navbar-default-color": "#D7EDFF",
     "@navbar-default-bg": "#3591DD",
-    "@navbar-default-link-color": "#D7EDFF",
+    "@navbar-default-link-color": "@navbar-default-color",
     "@navbar-default-link-hover-color": "#FFFFFF",
+    "@navbar-default-link-active-color": "@navbar-default-link-hover-color",
+    "@navbar-default-brand-color": "@navbar-default-link-active-color",
+    "@navbar-default-brand-hover-color": "lighten(@navbar-default-link-active-color, 10%)",
     "@navbar-inverse-color": "#FFF1DE",
-    "@navbar-inverse-bg": "#FFA72F"
+    "@navbar-inverse-bg": "#FFA72F",
+    "@navbar-inverse-link-color": "@navbar-inverse-color",
+    "@navbar-inverse-brand-color": "@navbar-inverse-link-active-color",
+    "@progress-bar-info-bg": "@navbar-default-link-active-bg"
   },
   "css": [
     "print.less",

@@ -6,6 +6,8 @@
     <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">-->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="css/global.css">
+
     <title>Reserve Recreation - Badminton</title>
 </head>
 <body>
@@ -31,14 +33,93 @@
                 <li><a href="#">Cancel booking</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Vendor Login</a></li>
+                <button type="button" class="btn btn-warning navbar-btn">Sign In</button>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
 
+    <header>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                <span class="sr-only">Step 1</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="location-selection-container">
+        <h1>Location <small>Where do you want to book a court? </small></h1>
+        <div class="well">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="input-group pad-bottom-small">
+                                <input type="text" class="form-control" placeholder="Enter your address to find nearest court">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#location-selection-ace">
+                                            <div class="">
+                                                <h4>Ace Badminton Center Ltd</h4>
+                                                <span class="glyphicon glyphicon-map-marker"></span> 9151 Van Horne Way, Richmond, BC V6X 1W2 <br/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="location-selection-ace" class="panel-collapse collapse">
+                                        <strong>Number of courts:</strong> 20 <br/>
+                                        <span class="glyphicon glyphicon-time"></span>
+                                        Sun-Thu 9am - 11pm, Sat-Sun 9am - 1am
+                                        <br/>
+                                        <span class="glyphicon glyphicon-earphone"></span> (604) 233-0077 <br/>
+                                        <span class="glyphicon glyphicon-globe"></span> <a href="http://www.acebadmintoncentre.com/">www.acebadmintoncentre.com</a> <br/>
+                                        <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@acebadmintoncentre.com">info@acebadmintoncentre.com</a> <br/>
+                                    </div>
+                                </div>
+                                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                                <a href="#" class="list-group-item">Morbi leo risus</a>
+                                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="location-map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo0HBa1d_xNIIwx1UksjPg50MQQbjLCjQ&sensor=true"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(49.19058, -123.10936),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("location-map"),
+                    mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </body>
 </html>
