@@ -12,6 +12,7 @@
     "@navbar-inverse-bg": "#FFA72F",
     "@navbar-inverse-link-color": "@navbar-inverse-color",
     "@navbar-inverse-brand-color": "@navbar-inverse-link-active-color",
+    "@well-bg": "rgba(245, 245, 245, 0.5)",
     "@progress-bar-info-bg": "@navbar-default-link-active-bg"
   },
   "css": [
