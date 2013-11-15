@@ -18,6 +18,11 @@ section {
     margin: 0 auto;
 }
 
+address {
+    margin: 0;
+    display: inline;
+}
+
 /******************************** [START] Bootstrap Override ***********************************/
 .progress {
     border-radius: 0;
@@ -27,9 +32,22 @@ section {
 
 
 /******************************** [START] Generic styles ***********************************/
+.right {
+    float: right;
+}
+
+.pad-small {
+    padding: 0.5em;
+}
+
+.pad-medium {
+    padding: 1em;
+}
+
 .pad-bottom-small {
     padding-bottom: 0.5em;
 }
+
 /******************************** [END] Generic styles ***********************************/
 
 
