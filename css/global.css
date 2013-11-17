@@ -65,3 +65,23 @@ address {
 #location-selection-container a:hover {
     text-decoration: none;
 }
+
+#time-court-selection-container td {
+    padding: 0;
+}
+
+#time-court-selection-container th {
+    text-align: center;
+}
+
+#time-court-selection-container td.court-selection-label {
+    vertical-align: middle;
+}
+
+#time-court-selection-container td button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.court-booked {
+}

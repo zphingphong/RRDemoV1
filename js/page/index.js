@@ -8,6 +8,10 @@
 
 $(function() {
     mapInitialize();
+
+    var timeString = moment().format('dddd MMMM Do YYYY, h:mm a');
+    $('#time-selection-input').val(timeString);
+    $('#time-selection-display').text(timeString);
 });
 
 function mapInitialize() {
