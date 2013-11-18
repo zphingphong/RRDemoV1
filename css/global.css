@@ -68,6 +68,10 @@ address {
     margin: 0;
 }
 
+.section-spaced {
+    padding-top: 70px;
+}
+
 /******************************** [END] Generic styles ***********************************/
 
 
