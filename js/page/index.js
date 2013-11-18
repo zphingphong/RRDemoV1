@@ -12,6 +12,20 @@ $(function() {
     var timeString = moment().format('dddd MMMM Do YYYY, h:mm a');
     $('#time-selection-input').val(timeString);
     $('#time-selection-display').text(timeString);
+    $('select').selectpicker();
+
+    $('#court-repeat-every-input').TouchSpin({
+        min: 1,
+        max: 51,
+        maxboostedstep: 5,
+        postfix: 'weeks'
+    });
+    $('#court-repeat-end-after-input').TouchSpin({
+        min: 1,
+        max: 51,
+        maxboostedstep: 5,
+        postfix: 'occurrences'
+    });
 });
 
 function mapInitialize() {

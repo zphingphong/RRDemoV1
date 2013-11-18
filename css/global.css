@@ -35,6 +35,10 @@ address {
     border-radius: 0;
     height: 0.5em;
 }
+
+.modal-footer {
+    margin-top: 0;
+}
 /******************************** [END] Bootstrap Override ***********************************/
 
 
@@ -53,6 +57,15 @@ address {
 
 .pad-bottom-small {
     padding-bottom: 0.5em;
+}
+
+.pad-top-bottom-small {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 /******************************** [END] Generic styles ***********************************/
