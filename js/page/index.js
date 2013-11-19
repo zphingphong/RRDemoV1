@@ -26,6 +26,9 @@ $(function() {
         maxboostedstep: 5,
         postfix: 'occurrences'
     });
+
+    $('.court-images-container a').fancybox();
+
 });
 
 function mapInitialize() {

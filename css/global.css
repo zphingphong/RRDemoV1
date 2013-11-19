@@ -111,3 +111,22 @@ address {
 
 .court-booked {
 }
+
+.court-images-container {
+    margin: 0.5em auto;
+}
+
+.court-image-border {
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 5px 5px 0 5px;
+    margin: 0 2px;
+}
+
+.court-image {
+    height: 5em;
+    width: 5em;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
