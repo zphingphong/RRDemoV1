@@ -39,6 +39,11 @@ address {
 .modal-footer {
     margin-top: 0;
 }
+
+.navbar-brand {
+    padding: 1px 15px;
+}
+
 /******************************** [END] Bootstrap Override ***********************************/
 
 
